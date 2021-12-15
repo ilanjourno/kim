@@ -162,18 +162,18 @@ button:focus {
 .price_item:hover .price_head,
 .price_item:hover .price_footer,
 .news_widget .input-group .sub-btn {
-  background: -webkit-linear-gradient(90deg, #ba1522 0%, #eca2f1 100%);
-  background: -moz-linear-gradient(90deg, #ba1522 0%, #eca2f1 100%);
-  background: -o-linear-gradient(90deg, #ba1522 0%, #eca2f1 100%);
-  background: linear-gradient(90deg, #ba1522 0%, #eca2f1 100%);
+  background: -webkit-linear-gradient(90deg, #ba1522 0%, #983038 100%);
+  background: -moz-linear-gradient(90deg, #ba1522 0%, #983038 100%);
+  background: -o-linear-gradient(90deg, #ba1522 0%, #983038 100%);
+  background: linear-gradient(90deg, #ba1522 0%, #983038 100%);
 }
 
 .contact_info .info_item i,
 .recent_update_inner .nav.nav-tabs li a span.lnr {
-  background: -webkit-linear-gradient(90deg, #ba1522 0%, #eca2f1 100%);
-  background: -moz-linear-gradient(90deg, #ba1522 0%, #eca2f1 100%);
-  background: -o-linear-gradient(90deg, #ba1522 0%, #eca2f1 100%);
-  background: linear-gradient(90deg, #ba1522 0%, #eca2f1 100%);
+  background: -webkit-linear-gradient(90deg, #ba1522 0%, #983038 100%);
+  background: -moz-linear-gradient(90deg, #ba1522 0%, #983038 100%);
+  background: -o-linear-gradient(90deg, #ba1522 0%, #983038 100%);
+  background: linear-gradient(90deg, #ba1522 0%, #983038 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -195,15 +195,15 @@ button:focus {
   border: double 2px transparent;
   border-radius: 5px;
   background-image: linear-gradient(white, white),
-    radial-gradient(circle at top left, #ba1522, #eca2f1);
+    radial-gradient(circle at top left, #ba1522, #983038);
   background-image: -webkit-linear-gradient(white, white),
-    -webkit-radial-gradient(circle at top left, #ba1522, #eca2f1);
+    -webkit-radial-gradient(circle at top left, #ba1522, #983038);
   background-image: -moz-linear-gradient(white, white),
-    -moz-radial-gradient(circle at top left, #ba1522, #eca2f1);
+    -moz-radial-gradient(circle at top left, #ba1522, #983038);
   background-image: -ms-linear-gradient(white, white),
-    -ms-radial-gradient(circle at top left, #ba1522, #eca2f1);
+    -ms-radial-gradient(circle at top left, #ba1522, #983038);
   background-image: -o-linear-gradient(white, white),
-    -o-radial-gradient(circle at top left, #ba1522, #eca2f1);
+    -o-radial-gradient(circle at top left, #ba1522, #983038);
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
@@ -211,16 +211,16 @@ button:focus {
   padding: 0 35px;
 }
 .primary_btn:hover {
-  background-image: linear-gradient(to right, #ba1522 0%, #eca2f1 100%),
-    radial-gradient(circle at top left, #ba1522, #eca2f1);
-  background-image: -webkit-linear-gradient(to right, #ba1522 0%, #eca2f1 100%),
-    -webkit-radial-gradient(circle at top left, #ba1522, #eca2f1);
-  background-image: -moz-linear-gradient(to right, #ba1522 0%, #eca2f1 100%),
-    -moz-radial-gradient(circle at top left, #ba1522, #eca2f1);
-  background-image: -ms-linear-gradient(to right, #ba1522 0%, #eca2f1 100%),
-    -ms-radial-gradient(circle at top left, #ba1522, #eca2f1);
-  background-image: -o-linear-gradient(to right, #ba1522 0%, #eca2f1 100%),
-    -o-radial-gradient(circle at top left, #ba1522, #eca2f1);
+  background-image: linear-gradient(to right, #ba1522 0%, #983038 100%),
+    radial-gradient(circle at top left, #ba1522, #983038);
+  background-image: -webkit-linear-gradient(to right, #ba1522 0%, #983038 100%),
+    -webkit-radial-gradient(circle at top left, #ba1522, #983038);
+  background-image: -moz-linear-gradient(to right, #ba1522 0%, #983038 100%),
+    -moz-radial-gradient(circle at top left, #ba1522, #983038);
+  background-image: -ms-linear-gradient(to right, #ba1522 0%, #983038 100%),
+    -ms-radial-gradient(circle at top left, #ba1522, #983038);
+  background-image: -o-linear-gradient(to right, #ba1522 0%, #983038 100%),
+    -o-radial-gradient(circle at top left, #ba1522, #983038);
   color: #fff;
   box-shadow: 0px 10px 30px rgba(130, 82, 250, 0.2);
   border: 2px solid transparent;
@@ -444,31 +444,31 @@ button:focus {
 }
 .header_area .navbar-right .primary_btn {
   min-width: 145px;
-  background-image: linear-gradient(to right, #ba1522 0%, #eca2f1 100%),
-    radial-gradient(circle at top left, #ba1522, #eca2f1);
-  background-image: -webkit-linear-gradient(to right, #ba1522 0%, #eca2f1 100%),
-    -webkit-radial-gradient(circle at top left, #ba1522, #eca2f1);
-  background-image: -moz-linear-gradient(to right, #ba1522 0%, #eca2f1 100%),
-    -moz-radial-gradient(circle at top left, #ba1522, #eca2f1);
-  background-image: -ms-linear-gradient(to right, #ba1522 0%, #eca2f1 100%),
-    -ms-radial-gradient(circle at top left, #ba1522, #eca2f1);
-  background-image: -o-linear-gradient(to right, #ba1522 0%, #eca2f1 100%),
-    -o-radial-gradient(circle at top left, #ba1522, #eca2f1);
+  background-image: linear-gradient(to right, #ba1522 0%, #983038 100%),
+    radial-gradient(circle at top left, #ba1522, #983038);
+  background-image: -webkit-linear-gradient(to right, #ba1522 0%, #983038 100%),
+    -webkit-radial-gradient(circle at top left, #ba1522, #983038);
+  background-image: -moz-linear-gradient(to right, #ba1522 0%, #983038 100%),
+    -moz-radial-gradient(circle at top left, #ba1522, #983038);
+  background-image: -ms-linear-gradient(to right, #ba1522 0%, #983038 100%),
+    -ms-radial-gradient(circle at top left, #ba1522, #983038);
+  background-image: -o-linear-gradient(to right, #ba1522 0%, #983038 100%),
+    -o-radial-gradient(circle at top left, #ba1522, #983038);
   color: #fff;
 }
 .header_area .navbar-right .primary_btn:hover {
   background: transparent;
   color: #222222;
   background-image: linear-gradient(white, white),
-    radial-gradient(circle at top left, #ba1522, #eca2f1);
+    radial-gradient(circle at top left, #ba1522, #983038);
   background-image: -webkit-linear-gradient(white, white),
-    -webkit-radial-gradient(circle at top left, #ba1522, #eca2f1);
+    -webkit-radial-gradient(circle at top left, #ba1522, #983038);
   background-image: -moz-linear-gradient(white, white),
-    -moz-radial-gradient(circle at top left, #ba1522, #eca2f1);
+    -moz-radial-gradient(circle at top left, #ba1522, #983038);
   background-image: -ms-linear-gradient(white, white),
-    -ms-radial-gradient(circle at top left, #ba1522, #eca2f1);
+    -ms-radial-gradient(circle at top left, #ba1522, #983038);
   background-image: -o-linear-gradient(white, white),
-    -o-radial-gradient(circle at top left, #ba1522, #eca2f1);
+    -o-radial-gradient(circle at top left, #ba1522, #983038);
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
@@ -755,15 +755,15 @@ button:focus {
   z-index: 0;
   border: double 2px transparent;
   background-image: linear-gradient(white, white),
-    radial-gradient(circle at top left, #ba1522, #eca2f1);
+    radial-gradient(circle at top left, #ba1522, #983038);
   background-image: -webkit-linear-gradient(white, white),
-    -webkit-radial-gradient(circle at top left, #ba1522, #eca2f1);
+    -webkit-radial-gradient(circle at top left, #ba1522, #983038);
   background-image: -moz-linear-gradient(white, white),
-    -moz-radial-gradient(circle at top left, #ba1522, #eca2f1);
+    -moz-radial-gradient(circle at top left, #ba1522, #983038);
   background-image: -ms-linear-gradient(white, white),
-    -ms-radial-gradient(circle at top left, #ba1522, #eca2f1);
+    -ms-radial-gradient(circle at top left, #ba1522, #983038);
   background-image: -o-linear-gradient(white, white),
-    -o-radial-gradient(circle at top left, #ba1522, #eca2f1);
+    -o-radial-gradient(circle at top left, #ba1522, #983038);
   background-origin: border-box;
   background-clip: content-box, border-box;
   padding: 0;
@@ -1359,16 +1359,16 @@ button:focus {
   margin-top: 20px;
   cursor: pointer;
   border: none;
-  background-image: linear-gradient(to right, #ba1522 0%, #eca2f1 100%),
-    radial-gradient(circle at top left, #ba1522, #eca2f1);
-  background-image: -webkit-linear-gradient(to right, #ba1522 0%, #eca2f1 100%),
-    -webkit-radial-gradient(circle at top left, #ba1522, #eca2f1);
-  background-image: -moz-linear-gradient(to right, #ba1522 0%, #eca2f1 100%),
-    -moz-radial-gradient(circle at top left, #ba1522, #eca2f1);
-  background-image: -ms-linear-gradient(to right, #ba1522 0%, #eca2f1 100%),
-    -ms-radial-gradient(circle at top left, #ba1522, #eca2f1);
-  background-image: -o-linear-gradient(to right, #ba1522 0%, #eca2f1 100%),
-    -o-radial-gradient(circle at top left, #ba1522, #eca2f1);
+  background-image: linear-gradient(to right, #ba1522 0%, #983038 100%),
+    radial-gradient(circle at top left, #ba1522, #983038);
+  background-image: -webkit-linear-gradient(to right, #ba1522 0%, #983038 100%),
+    -webkit-radial-gradient(circle at top left, #ba1522, #983038);
+  background-image: -moz-linear-gradient(to right, #ba1522 0%, #983038 100%),
+    -moz-radial-gradient(circle at top left, #ba1522, #983038);
+  background-image: -ms-linear-gradient(to right, #ba1522 0%, #983038 100%),
+    -ms-radial-gradient(circle at top left, #ba1522, #983038);
+  background-image: -o-linear-gradient(to right, #ba1522 0%, #983038 100%),
+    -o-radial-gradient(circle at top left, #ba1522, #983038);
   color: #fff;
   box-shadow: 0px 10px 30px rgba(130, 82, 250, 0.2);
   border: 2px solid transparent;
@@ -1382,15 +1382,15 @@ button:focus {
   border: double 2px transparent;
   border-radius: 5px;
   background-image: linear-gradient(white, white),
-    radial-gradient(circle at top left, #ba1522, #eca2f1);
+    radial-gradient(circle at top left, #ba1522, #983038);
   background-image: -webkit-linear-gradient(white, white),
-    -webkit-radial-gradient(circle at top left, #ba1522, #eca2f1);
+    -webkit-radial-gradient(circle at top left, #ba1522, #983038);
   background-image: -moz-linear-gradient(white, white),
-    -moz-radial-gradient(circle at top left, #ba1522, #eca2f1);
+    -moz-radial-gradient(circle at top left, #ba1522, #983038);
   background-image: -ms-linear-gradient(white, white),
-    -ms-radial-gradient(circle at top left, #ba1522, #eca2f1);
+    -ms-radial-gradient(circle at top left, #ba1522, #983038);
   background-image: -o-linear-gradient(white, white),
-    -o-radial-gradient(circle at top left, #ba1522, #eca2f1);
+    -o-radial-gradient(circle at top left, #ba1522, #983038);
   background-origin: border-box;
   background-clip: content-box, border-box;
   color: #222222;
@@ -3100,15 +3100,15 @@ h6 {
   border: double 2px transparent;
   border-radius: 5px;
   background-image: linear-gradient(white, white),
-    radial-gradient(circle at top left, #ba1522, #eca2f1);
+    radial-gradient(circle at top left, #ba1522, #983038);
   background-image: -webkit-linear-gradient(white, white),
-    -webkit-radial-gradient(circle at top left, #ba1522, #eca2f1);
+    -webkit-radial-gradient(circle at top left, #ba1522, #983038);
   background-image: -moz-linear-gradient(white, white),
-    -moz-radial-gradient(circle at top left, #ba1522, #eca2f1);
+    -moz-radial-gradient(circle at top left, #ba1522, #983038);
   background-image: -ms-linear-gradient(white, white),
-    -ms-radial-gradient(circle at top left, #ba1522, #eca2f1);
+    -ms-radial-gradient(circle at top left, #ba1522, #983038);
   background-image: -o-linear-gradient(white, white),
-    -o-radial-gradient(circle at top left, #ba1522, #eca2f1);
+    -o-radial-gradient(circle at top left, #ba1522, #983038);
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
@@ -3132,16 +3132,16 @@ h6 {
   color: #fff;
 }
 .price_item:hover .price_footer .primary_btn {
-  background-image: linear-gradient(to right, #ba1522 0%, #eca2f1 100%),
-    radial-gradient(circle at top left, #ba1522, #eca2f1);
-  background-image: -webkit-linear-gradient(to right, #ba1522 0%, #eca2f1 100%),
-    -webkit-radial-gradient(circle at top left, #ba1522, #eca2f1);
-  background-image: -moz-linear-gradient(to right, #ba1522 0%, #eca2f1 100%),
-    -moz-radial-gradient(circle at top left, #ba1522, #eca2f1);
-  background-image: -ms-linear-gradient(to right, #ba1522 0%, #eca2f1 100%),
-    -ms-radial-gradient(circle at top left, #ba1522, #eca2f1);
-  background-image: -o-linear-gradient(to right, #ba1522 0%, #eca2f1 100%),
-    -o-radial-gradient(circle at top left, #ba1522, #eca2f1);
+  background-image: linear-gradient(to right, #ba1522 0%, #983038 100%),
+    radial-gradient(circle at top left, #ba1522, #983038);
+  background-image: -webkit-linear-gradient(to right, #ba1522 0%, #983038 100%),
+    -webkit-radial-gradient(circle at top left, #ba1522, #983038);
+  background-image: -moz-linear-gradient(to right, #ba1522 0%, #983038 100%),
+    -moz-radial-gradient(circle at top left, #ba1522, #983038);
+  background-image: -ms-linear-gradient(to right, #ba1522 0%, #983038 100%),
+    -ms-radial-gradient(circle at top left, #ba1522, #983038);
+  background-image: -o-linear-gradient(to right, #ba1522 0%, #983038 100%),
+    -o-radial-gradient(circle at top left, #ba1522, #983038);
   background: #fff;
   color: #222222;
 }
