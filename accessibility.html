@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap');
+
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/accessibility.css">
+</head>
+
+<body>
+    <img src="./assets/img/accessibility_logo.svg" alt="Logo accessibility menu Alguaïa" class="accessibilityLogo">
+    <div class="accessibilityMenu">
+        <div class="headerAccessibilityMenu">
+            <h1>Menu d'accessibilté</h1>
+            <i class="fas fa-times accessibilityClose"></i>
+        </div>
+        <ul class="accessibilityList">
+            <li class="first" id="keyboard-nav">
+                <i class="fas fa-check" id="check-keyboardNav"></i>
+                <i class="far fa-keyboard"></i>
+                <h3>Navigation clavier</h3>
+            </li>
+            <li id="read-page">
+                <i class="fas fa-check" id="check-readPage"></i>
+                <i class="fab fa-readme"></i>
+                <h3>Lire la page</h3>
+            </li>
+            <li class="first" id="more-contrast">
+                <i class="fas fa-adjust"></i>
+                <h3>+ Contraste</h3>
+                <ul class="result-accessibility" id="contrast-result"></ul>
+            </li>
+            <li id="bigger-text">
+                <i class="fas fa-text-height"></i>
+                <h3>Texte plus gros</h3>
+                <ul class="result-accessibility" id="biggerText-result"></ul>
+            </li>
+            <li class="first" id="light-spacing">
+                <i class="fas fa-text-width"></i>
+                <h3>+ Espacement de texte</h3>
+                <ul class="result-accessibility" id="lightSpacing-result"></ul>
+            </li>
+            <li id="text-underline">
+                <i class="fas fa-check" id="check-underline"></i>
+                <i class="fas fa-underline"></i>
+                <h3>Souligner les liens</h3>
+            </li>
+            <li class="first bottom reset" id="reset-ls">
+                <i class="fas fa-sync-alt"></i>
+                <h3>Tout réinitialiser</h3>
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+    let isUnderline = localStorage.getItem("text-underline") || false;
+    let navKeyboard = localStorage.getItem("keyboard-nav") || false;
+    let isBiggerText = localStorage.getItem("bigger-text") || 0;
+    let isLightSpacing = localStorage.getItem("light-spacing") || 0;
+    let isContrast = localStorage.getItem("more-contrast") || 0;
+    let isReadPage = localStorage.getItem("read-page") || false;
+
+    let bool = false
+    $(".accessibilityLogo").on("click", function () {
+        bool = !bool
+        if (bool == true) {
+            $(".accessibilityMenu").css({ "display": "flex" })
+        } else {
+            $(".accessibilityMenu").css({ "display": "none" })
+        }
+    })
+    $(".accessibilityClose").click(function () {
+        bool = !bool
+        $(".accessibilityMenu").css({ "display": "none" })
+    })
+
+    textUnderline();
+    biggerText();
+    lightSpacing();
+    keyboardNav();
+    moreContrast();
+    readPage();
+
+    $("#reset-ls").click(function () {
+        isReadPage = false
+        isContrast = 0
+        isLightSpacing = 0
+        isBiggerText = 0
+        navKeyboard = false
+        isUnderline = false
+        textUnderline();
+        biggerText();
+        lightSpacing();
+        keyboardNav();
+        moreContrast();
+        readPage();
+    })
+    $("#read-page").click(function () {
+        isReadPage = !isReadPage
+        readPage();
+    })
+    $("#more-contrast").click(function () {
+        if (isContrast < 4) {
+            isContrast++
+        } else {
+            isContrast = 0
+        }
+        moreContrast()
+    })
+    $("#keyboard-nav").click(function () {
+        navKeyboard = !navKeyboard
+        keyboardNav()
+    })
+    $("#text-underline").click(function () {
+        isUnderline = !isUnderline
+        textUnderline()
+    })
+    $("#bigger-text").click(function () {
+        if (isBiggerText < 4) {
+            console.log('oui')
+            isBiggerText++
+        } else {
+            isBiggerText = 0
+        }
+        biggerText()
+    })
+    $("#light-spacing").click(function () {
+        if (isLightSpacing < 4) {
+            isLightSpacing++
+        } else {
+            isLightSpacing = 0
+        }
+        lightSpacing()
+    })
+
+    function readPage() {
+        if (isReadPage) {
+            $('#check-readPage').css({ "display": "block" })
+            localStorage.setItem("read-page", true)
+            $("#content").find("h1, h2, h3, h4, h5, h6, p, a, em").each(function (key, value) {
+                console.log('ilan')
+                $(this).one("click", function (e) {
+                    if (isReadPage) {
+                        const synth = window.speechSynthesis;
+                        const text = value
+                        const toSpeak = new SpeechSynthesisUtterance(text.innerHTML);
+                        synth.speak(toSpeak);
+                    }
+                })
+            })
+        } else {
+            $('#check-readPage').css({ "display": "none" })
+            localStorage.removeItem("read-page")
+        }
+    }
+
+
+    function moreContrast() {
+        $("#contrast-result").empty()
+        if (isContrast) {
+            for (let index = 0; index < isContrast; index++) {
+                $("#contrast-result").append("<li></li>")
+            }
+            localStorage.setItem("more-contrast", isContrast)
+            jQuery("body").css({ "filter": `contrast(${isContrast})` })
+        } else {
+            localStorage.removeItem("more-contrast")
+            jQuery("body").css({ "filter": `unset` })
+        }
+    }
+
+    function keyboardNav() {
+        if (navKeyboard) {
+            $('#check-keyboardNav').css({ "display": "block" })
+            localStorage.setItem("keyboard-nav", true)
+            $("body").find("*").each(function (key, value) {
+                $(this).on("focus", function () {
+                    $(this).css({ "border": "7px dashed red" })
+                })
+                $(this).on("focusout", function () {
+                    $(this).removeAttr('style');
+                })
+            })
+        } else {
+            $('#check-keyboardNav').css({ "display": "none" })
+            localStorage.removeItem("keyboard-nav")
+        }
+    }
+
+    function textUnderline() {
+        if (isUnderline) {
+            $('#check-underline').css({ "display": "block" })
+            localStorage.setItem("text-underline", true)
+            $("#content").find("a").each(function () {
+                $(this).css({ "text-decoration": "underline" })
+            })
+        } else {
+            $('#check-underline').css({ "display": "none" })
+            localStorage.removeItem("text-underline")
+            $("#content").find("a").each(function () {
+                $(this).css({ "text-decoration": "unset" })
+            })
+        }
+    }
+
+    function biggerText() {
+        $("#biggerText-result").empty()
+        if (isBiggerText > 0) {
+            for (let index = 0; index < isBiggerText; index++) {
+                $("#biggerText-result").append("<li></li>")
+            }
+            localStorage.setItem("bigger-text", isBiggerText)
+            $("#content").find("*").each(function (key, value) {
+                $(this).css({ "font-size": `calc(${window.getComputedStyle(value, null).getPropertyValue('font-size')} + ${isBiggerText}px)` })
+            })
+        } else {
+            localStorage.removeItem("bigger-text")
+            $("#content").find("*").each(function () {
+                $(this).css({ "font-size": "" })
+            })
+        }
+    }
+
+    function lightSpacing() {
+        $("#lightSpacing-result").empty()
+        for (let index = 0; index < isLightSpacing; index++) {
+            $("#lightSpacing-result").append("<li></li>")
+        }
+        if (isLightSpacing > 0) {
+            localStorage.setItem("light-spacing", isLightSpacing)
+            $("#content").find("*").each(function (key, value) {
+                $(this).css({ "letter-spacing": `${isLightSpacing}px` })
+            })
+        } else {
+            localStorage.removeItem("light-spacing")
+            $("#content").find('*').each(function () {
+                $(this).css({ "letter-spacing": "0px" })
+            })
+        }
+    }
+
+</script>
+
+</html>
